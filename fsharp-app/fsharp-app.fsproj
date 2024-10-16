@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>fsharp_app</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="IO\GetPersonOutput.fs" />
+    <Compile Include="IO\CreatePersonOutput.fs" />
+    <Compile Include="IO\CreatePersonInput.fs" />
+    <Compile Include="UseCases\GetPersonUseCase.fs" />
+    <Compile Include="UseCases\UpsertPersonUseCase.fs" />
+    <Compile Include="Controllers\PersonController.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1" />
+  </ItemGroup>
+
+</Project>
